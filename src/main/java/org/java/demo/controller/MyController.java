@@ -18,9 +18,8 @@ public class MyController {
 	private static char[] stringMovies;
 
 	@GetMapping("/hello")
-	public String sayHelloToName(Model model,
-		@RequestParam(name = "name") String name) {
-		model.addAttribute("name", name);
+	public String sayHelloToName(Model model) {
+		model.addAttribute("name", "Sophia");
 		return "index";
 	}
 	
